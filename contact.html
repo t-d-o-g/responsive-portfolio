@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>Contact</title>
+        <link href="assets/css/reset.css" rel="stylesheet" onerror=sheetError()>
+        <link href="assets/css/style.css" rel="stylesheet" onerror=sheetError()> 
+    </head>
+    <body>
+        <header>
+            <h1 class="my-name">Travis Collins</h1>
+            <nav>
+                <div class="nav-items">
+                    <a class="right-menu-border" href="./">About</a>
+                    <a class="right-menu-border" href="./portfolio.html">Portfolio</a>
+                    <a href="./contact.html">Contact</a>
+                </div>
+            </nav>
+        </header>
+
+        <main class="content">
+            <h1 class="color-teal">Contact</h2>
+
+            <hr size="20">
+
+            <form class="contact-form" action="mailto:someone@example.com" method="post" enctype="text/plain">
+                <label>Name</label>
+                <br>
+                <input type="text" id="name" name="name"  placeholder="John Smith">
+                <br>
+
+                <label>Email</label>
+                <br>
+                <input type="text" id="email" name="email" placeholder="example@gmail.com">
+                <br>
+
+                <label>Message</label>
+                <br>
+                <textarea type="text" id="message" name="message" style="height:300px"></textarea>
+                <br>
+
+                <input type="submit" value="Submit" action="mailto:me@example.com">
+            </form>
+
+        </main>
+
+        <div class="push"></div>
+
+        <footer>
+            <small class="copyright">&copy; 2018<small>
+        </footer>
+    </body>
+</html>

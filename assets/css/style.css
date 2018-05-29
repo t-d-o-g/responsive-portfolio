@@ -1,0 +1,219 @@
+body {
+    display: grid;
+    min-height: 100%;
+    grid-template-rows: 1fr;
+    grid-template-columns: 3.5fr .5fr;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+    background-image: url("../images/bg.png");
+}
+
+p {
+    font-family: arial, "helvetica neue", helvetica, sans-serif; 
+    color: #777777;
+    padding: 10px 20px;
+}
+
+a {
+    font-family: arial, "helvetica neue", helvetica, sans-serif; 
+    color: #777777;
+    text-decoration: none;
+}
+
+h1 {
+    display: inline-block;
+    font-family: georgia, times, "times new roman", serif;
+    font-size: 35px;
+    padding: 18px;
+}
+
+h2 {
+    font-family: georgia, times, "times new roman", serif;
+    height: 100%;
+}
+
+hr {
+    background: #cccccc;
+    width: 95%;
+    height: 1px;
+}
+
+label {
+    font-family: arial, "helvetica neue", helvetica, sans-serif; 
+    color: #777777;
+    padding: 2px;
+}
+
+main {
+    grid-area: main;
+    background: #fcfcfc;
+    border: 2px solid #dddddd;
+    width: 960px;
+    margin: 50px;
+}
+
+header {
+    grid-area: header;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background: #ececec;
+    border: 2px solid #cccccc;
+    height: 60px;
+}
+
+footer {
+    grid-area: footer;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background: #666666;
+    height: 50px;
+    width: 100%;
+    border-top: 5px solid #4aaaa5;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+img {
+    margin: 10px 20px;
+    width: 30%; 
+    border-radius: 5px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.color-teal {
+    color: #4aaaa5;
+}
+
+.color-white {
+    color: #fcfcfc;
+}
+
+.base-font {
+    font-family: arial, "helvetica neue", helvetica, sans-serif; 
+    color: #777777;
+}
+
+.float-left {
+    float: left;
+}
+
+.right-menu-border {
+    border-right: 1px solid #cccccc;
+    margin-right: 5px;
+    padding-right: 10px;
+}
+
+.nav-items {
+    padding: 20px;
+}
+
+.my-name {
+    position: absolute;
+    top: 0;
+    left: 100px;
+    background: #4aaaa5;
+    font-size: 28px;
+    color: #fcfcfc;
+}
+
+.copyright {
+    position: absolute;
+    margin: 18px;
+    right: 50%;
+    color: rgba(256, 256, 256, 0.5);
+}
+
+.content {
+    width: auto;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.push {
+    height: 50px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 28.88%);
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 44px;
+}
+
+.wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+.img-label {
+    position: relative;
+    background: #4aaaa5;
+    color: #fcfcfc;
+    opacity: .8;
+    bottom: 80px;
+    text-align: center;
+    padding: 20px;
+    margin: 0 20px;
+    width: 85.5%;
+}
+
+.contact-form {
+    padding: 20px;
+}
+
+input[type=text], select, textarea {
+    width: 95%;
+    height: 30px;
+    margin: 2px;
+    resize: vertical;
+    padding: 0 10px;
+    margin-bottom: 16px;
+    font-size: 15px;
+}
+
+input[type=submit] {
+    background: #4aaaa5;
+    font-family: arial, "helvetica neue", helvetica, sans-serif; 
+    font-size: 13px;
+    color: #fcfcfc;
+    padding: 12px 24px;
+    margin: 2px;
+}
+
+input[type=submit]:hover {
+    background: #00b233;
+    cursor: pointer;
+}
+
+input::placeholder {
+    font-family: arial, "helvetica neue", helvetica, sans-serif; 
+    color: #777777;
+}
+
+@media screen and (max-width: 980px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+
+    .content {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .my-name {
+        background: orange;
+    }
+}
