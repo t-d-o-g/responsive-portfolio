@@ -3,9 +3,12 @@
 <html lang="en-us">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <title>Contact</title>
+
         <link href="assets/css/reset.css" rel="stylesheet" onerror=sheetError()>
-        <link href="assets/css/style.css" rel="stylesheet" onerror=sheetError()> 
+        <link href="assets/css/main.css" rel="stylesheet" onerror=sheetError()> 
     </head>
     <body>
         <header>
@@ -19,28 +22,30 @@
             </nav>
         </header>
 
-        <main class="content">
+        <main>
             <h1 class="color-teal">Contact</h2>
 
             <hr size="20">
-
+            
             <form class="contact-form" action="mailto:someone@example.com" method="post" enctype="text/plain">
-                <label>Name</label>
-                <br>
-                <input type="text" id="name" name="name"  placeholder="John Smith">
-                <br>
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" class="form-control" placeholder="John Smith">
+                </div>
 
-                <label>Email</label>
-                <br>
-                <input type="text" id="email" name="email" placeholder="example@gmail.com">
-                <br>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" class="form-control is-valid" placeholder="example@gmail.com">
+                </div>
 
-                <label>Message</label>
-                <br>
-                <textarea type="text" id="message" name="message" style="height:300px"></textarea>
-                <br>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea type="text" class="form-control" style="height:25vh"></textarea>
+                </div>
 
-                <input type="submit" value="Submit" action="mailto:me@example.com">
+                <div class="form-group">
+                    <button type="submit" class="btn-submit">Submit</button>
+                </div>
             </form>
 
         </main>
