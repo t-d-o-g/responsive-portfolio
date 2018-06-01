@@ -214,4 +214,9 @@ input::placeholder {
         grid-template-columns: repeat(1, 100%);
         grid-template-rows: 1fr;
     }
+
+    .portfolio-wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+    }
 }
