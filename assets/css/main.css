@@ -59,7 +59,6 @@ header {
     grid-column-start: 1;
     grid-column-end: 3;
     background: #ececec;
-    border: 2px solid #cccccc;
 }
 
 footer {
@@ -107,6 +106,7 @@ img {
 }
 
 .my-name {
+    margin-left: 50px;
     background: #4aaaa5;
     font-size: 28px;
     color: #fcfcfc;
@@ -136,7 +136,7 @@ img {
     padding: 5%;
     width: 80%;
     left: 5%;
-    bottom: 35%;
+    bottom: 28%;
 }
 
 .contact-form {
@@ -206,6 +206,7 @@ input::placeholder {
     }
 
     .my-name {
+        margin: 0;
         text-align: center;
     }
 
