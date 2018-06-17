@@ -127,6 +127,11 @@ img {
     margin: 5%;
 }
 
+.portfolio-wrapper img:hover {
+    width: 90%;
+    margin: 5%;
+}
+
 .portfolio-wrapper a:hover {
     cursor: pointer;
 }
