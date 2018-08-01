@@ -160,6 +160,10 @@ img {
     background: #4aaaa5;
 }
 
+.social-icon {
+    float: right;
+}
+
 input[type=text],
 input[type="email"],
 textarea
@@ -232,5 +236,9 @@ input::placeholder {
     .portfolio-wrapper {
         display: grid;
         grid-template-columns: repeat(1, 100%);
+    }
+
+    .social-icon {
+        width: 25%;
     }
 }
