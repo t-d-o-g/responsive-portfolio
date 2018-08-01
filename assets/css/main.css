@@ -122,6 +122,10 @@ img {
     grid-template-columns: repeat(2, 50%);
 }
 
+.portfolio-img h2 a {
+    color: #fcfcfc;
+}
+
 .portfolio-wrapper img {
     width: 90%;
     margin: 5%;
