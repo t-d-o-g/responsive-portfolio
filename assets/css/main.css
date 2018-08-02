@@ -47,7 +47,8 @@ label {
 
 main {
     grid-area: main;
-    background: #fcfcfc;
+    /* background: #fcfcfc; */
+    background: #dcdcdc;
     border: 2px solid #dddddd;
     margin: 50px 100px;
 }
