@@ -161,7 +161,13 @@ img {
 }
 
 .social-icon {
-    float: right;
+    position: absolute;
+    right: 15%;
+}
+
+.social-icon img {
+    width: 15%;
+    margin: 5%;
 }
 
 input[type=text],
@@ -210,6 +216,11 @@ input::placeholder {
         margin-left: 10px;
         margin-right: 10px;
     }
+
+    .social-icon {
+        position: absolute;
+        right: -10%;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -239,6 +250,7 @@ input::placeholder {
     }
 
     .social-icon {
-        width: 25%;
+        position: absolute;
+        right: -15%;
     }
 }
