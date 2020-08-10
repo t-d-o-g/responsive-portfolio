@@ -172,6 +172,11 @@ img {
     height: 600px;
 }
 
+#nav-links {
+    color: #777777;
+    text-decoration: none;
+}
+
 input[type=text],
 input[type="email"],
 textarea
